@@ -1,0 +1,137 @@
+.coin-container .content {
+    max-width: 740px;
+    margin: 16px auto;
+    padding: 11.2px 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+}
+
+.rank {
+    margin: 15px 0 0 0;
+}
+
+.rank-btn {
+    background-color: #fff;
+    color: #111;
+    padding: 5px;
+    box-shadow: 0px 0px 8px #18191b;
+    border-radius: 4px;
+
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.info .coin-heading {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.info .coin-heading .coin-image {
+    animation: rotateImg 3s linear infinite;
+}
+
+@keyframes rotateImg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+.info .coin-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    padding-right: 16px;
+    font-weight: 800;
+}
+
+table {
+    margin: 8px 0;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #26272b;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    width: 100%;
+}
+
+.stats .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
+    margin: 9.6px 0;
+    padding-bottom: 8px;
+}
+
+.stats .row p:first-child {
+    color: #d3d3d3;
+}
+
+.about h2 {
+    margin: 16px 0;
+    position: relative;
+}
+
+.about h2::before {
+    content: '';
+    position: absolute;
+    background-color: #30a9f9;
+    width: 11%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+.about p{
+    line-height: 22.5px;
+}
+
+@media screen and (max-width: 700px) {
+    .coin-container .content {
+        max-width: 100%;
+        margin: 8px;
+        padding: 0 8px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    td,
+    th {
+        padding: 5px 3px;
+    }
+
+    .rank {
+        margin: 24px 0 0 0;
+    }
+
+    .rank-btn {
+        margin: 8px 0;
+    }
+}

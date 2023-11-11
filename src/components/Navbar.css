@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    font-size: 35px;
+    color : #fb8500;
+}
+
+.orange{
+    color : #fb8500;
+}
